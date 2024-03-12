@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="owl/owl.carousel.css">
+	<link rel="stylesheet" href="owl/owl.theme.default.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Quiro Diagnostic Center</title>
+</head>
+
+<body>
+
+	<div class="container">
+	<header class="header">
+		<a class="logo" href="/"><h1>Quiro Diagnostic Center</h1></a>
+		<div class="header__nav">
+			<ul class="header__ul" id="headerUl">
+				<li class="header__li"><a class="header__a is-active" href="/"><span>Home</span></a></li>
+				<li class="header__li"><a class="header__a" href="#service">Service</a></li>
+				<li class="header__li"><a class="header__a" href="#doctors">Doctors</a></li>
+				<li class="header__li"><a class="header__a" href="#gallery">Gallery</a></li>
+				<li class="header__li"><a class="header__a" href="#contact">Contact</a></li>
+				<span class="material-icons icon-close">close</span>
+			</ul>
+			
+		</div>
+
+		<div class="header__search">
+
+			<form class="header__search__form">
+				<input type="text" placeholder="Search Here" name="search" class="header_search_input">
+				<button class="header_search_btn" type="submit"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M16.6 18L10.3 11.7C9.8 12.1 9.225 12.4167 8.575 12.65C7.925 12.8833 7.23333 13 6.5 13C4.68333 13 3.146 12.371 1.888 11.113C0.629333 9.85433 0 8.31667 0 6.5C0 4.68333 0.629333 3.14567 1.888 1.887C3.146 0.629 4.68333 0 6.5 0C8.31667 0 9.85433 0.629 11.113 1.887C12.371 3.14567 13 4.68333 13 6.5C13 7.23333 12.8833 7.925 12.65 8.575C12.4167 9.225 12.1 9.8 11.7 10.3L18 16.6L16.6 18ZM6.5 11C7.75 11 8.81267 10.5627 9.688 9.688C10.5627 8.81267 11 7.75 11 6.5C11 5.25 10.5627 4.18733 9.688 3.312C8.81267 2.43733 7.75 2 6.5 2C5.25 2 4.18733 2.43733 3.312 3.312C2.43733 4.18733 2 5.25 2 6.5C2 7.75 2.43733 8.81267 3.312 9.688C4.18733 10.5627 5.25 11 6.5 11Z" fill="white" />
+				  </svg></button>
+			  </form>
+			
+
+		</div>
+		<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+
+	</header>
+
+
+	<main>
+		
+
+			<section class="welcome" id="gallery">
+				<div class="owl-carousel">
+					<div>
+						<img src="img/sliders/slider_1.jpg" alt="Slider">
+					</div>
+					<div>
+						<img src="img/sliders/slider_2.jpg" alt="Slider">
+					</div>
+					<div>
+						<img src="img/sliders/slider_3.jpg" alt="Slider">
+					</div>
+					
+				</div>
+			</section>
+
+			<section class="service" id="service">
+
+				<h2 class="title">Our Services</h2>
+				<p class="desc">Magnis facilisis tortor volutpat lobortis ac id.
+					 Libero enim nunc etiam consectetur lacus.
+					  In malesuada dictum turpis amet porttitor viverra laoreet at commodo. 
+					  Pellentesque vitae id semper nec sollicitudin. 
+					  Quis purus, mus consectetur pharetra ipsum facilisis amet cras purus.</p>
+
+				<div class="service__group">
+
+					<div class="service__block">
+						<svg width="103" height="86" viewBox="0 0 103 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M47.1915 22.9401V0.125732H56.3173V22.9401H47.1915ZM77.3065 35.9442L70.9184 29.3281L87.1166 13.1299L93.5046 19.7461L77.3065 35.9442ZM26.2023 35.9442L10.0042 19.7461L16.3922 13.1299L32.5904 29.3281L26.2023 35.9442ZM51.7544 45.7544C60.728 45.7544 69.5678 47.5613 78.2738 51.1751C86.9828 54.7858 94.7214 60.2035 101.49 67.428C102.402 68.3406 102.859 69.4053 102.859 70.622C102.859 71.8388 102.402 72.9035 101.49 73.816L90.9951 84.0825C90.1585 84.919 89.1897 85.3753 88.0885 85.4513C86.9843 85.5274 85.9759 85.2232 85.0633 84.5388L71.831 74.5005C71.2226 74.0442 70.7663 73.5118 70.4622 72.9035C70.158 72.2951 70.0059 71.6106 70.0059 70.8502V57.846C67.1161 56.9334 64.1502 56.211 61.1083 55.6786C58.0664 55.1463 54.9484 54.8801 51.7544 54.8801C48.5604 54.8801 45.4424 55.1463 42.4005 55.6786C39.3586 56.211 36.3927 56.9334 33.5029 57.846V70.8502C33.5029 71.6106 33.3508 72.2951 33.0466 72.9035C32.7425 73.5118 32.2862 74.0442 31.6778 74.5005L18.4455 84.5388C17.5329 85.2232 16.526 85.5274 15.4249 85.4513C14.3206 85.3753 13.3503 84.919 12.5138 84.0825L2.01916 73.816C1.10659 72.9035 0.650299 71.8388 0.650299 70.622C0.650299 69.4053 1.10659 68.3406 2.01916 67.428C8.71136 60.2035 16.4302 54.7858 25.1757 51.1751C33.9212 47.5613 42.7808 45.7544 51.7544 45.7544ZM24.3772 61.04C22.1718 62.1807 20.0425 63.4918 17.9892 64.9732C15.9359 66.4576 13.8066 68.1124 11.6012 69.9376L16.164 74.5005L24.3772 68.1124V61.04ZM79.1316 61.2681V68.1124L87.3448 74.5005L91.9076 70.1657C89.7022 68.1885 87.5729 66.4774 85.5196 65.0325C83.4663 63.5876 81.337 62.3328 79.1316 61.2681Z" fill="#262626" />
+						  </svg>
+
+						  <h3 class="service__block__title">Call For Appointments</h3>
+						  <p class="service__block__desc">Velit faucibus sed adipiscing commodo. 
+							Mattis in at amet, facilisis eu dolor.
+							 Quam sit risus egestas morbi.</p>
+
+							 <div class="service__block__link__group"><a href="#contact" class="service__block__link">Learn More </a><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 16L6.575 14.6L12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16Z" fill="#8842F0" />
+							  </svg></div>
+					</div>
+
+					<div class="service__block__center">
+						<svg width="95" height="90" viewBox="0 0 95 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M37.5314 37.1251C32.4782 37.1251 28.1524 35.3259 24.554 31.7274C20.9555 28.129 19.1563 23.8032 19.1563 18.75C19.1563 13.6969 20.9555 9.37111 24.554 5.77267C28.1524 2.17422 32.4782 0.375 37.5314 0.375C42.5845 0.375 46.9103 2.17422 50.5087 5.77267C54.1072 9.37111 55.9064 13.6969 55.9064 18.75C55.9064 23.8032 54.1072 28.129 50.5087 31.7274C46.9103 35.3259 42.5845 37.1251 37.5314 37.1251ZM37.5314 27.9376C40.0579 27.9376 42.2216 27.0372 44.0224 25.2364C45.82 23.4387 46.7189 21.2766 46.7189 18.75C46.7189 16.2235 45.82 14.0613 44.0224 12.2636C42.2216 10.4629 40.0579 9.56252 37.5314 9.56252C35.0048 9.56252 32.8427 10.4629 31.045 12.2636C29.2442 14.0613 28.3438 16.2235 28.3438 18.75C28.3438 21.2766 29.2442 23.4387 31.045 25.2364C32.8427 27.0372 35.0048 27.9376 37.5314 27.9376ZM88.5221 89.9533L73.8221 75.2533C72.2143 76.172 70.4916 76.9377 68.6541 77.5502C66.8166 78.1627 64.8642 78.4689 62.797 78.4689C57.0548 78.4689 52.1732 76.4599 48.1521 72.4419C44.1341 68.4208 42.1251 63.5392 42.1251 57.797C42.1251 52.0548 44.1341 47.1732 48.1521 43.1521C52.1732 39.1341 57.0548 37.1251 62.797 37.1251C68.5392 37.1251 73.4209 39.1341 77.442 43.1521C81.46 47.1732 83.469 52.0548 83.469 57.797C83.469 59.8642 83.1627 61.8165 82.5502 63.654C81.9377 65.4915 81.1721 67.2142 80.2533 68.822L94.9534 83.5221L88.5221 89.9533ZM62.797 69.2814C66.0127 69.2814 68.7307 68.1712 70.951 65.9509C73.1713 63.7306 74.2814 61.0126 74.2814 57.797C74.2814 54.5814 73.1713 51.8634 70.951 49.6431C68.7307 47.4228 66.0127 46.3126 62.797 46.3126C59.5814 46.3126 56.8634 47.4228 54.6431 49.6431C52.4228 51.8634 51.3126 54.5814 51.3126 57.797C51.3126 61.0126 52.4228 63.7306 54.6431 65.9509C56.8634 68.1712 59.5814 69.2814 62.797 69.2814ZM0.781281 73.8752V61.1275C0.781281 58.5243 1.43206 56.1126 2.73363 53.8923C4.03519 51.672 5.83442 49.9876 8.1313 48.8392C12.036 46.8485 16.4383 45.1642 21.3384 43.786C26.2384 42.4079 31.6743 41.7188 37.6462 41.7188C36.7275 43.097 35.9435 44.57 35.2942 46.138C34.6419 47.7091 34.1243 49.3368 33.7415 51.0212C29.1478 51.404 25.0516 52.188 21.4532 53.3732C17.8548 54.5615 14.8305 55.8064 12.3805 57.1079C11.6149 57.4907 11.0223 58.0451 10.6027 58.7709C10.1801 59.4998 9.9688 60.2853 9.9688 61.1275V64.6876H33.7415C34.1243 66.372 34.6419 67.9798 35.2942 69.5111C35.9435 71.0423 36.7275 72.497 37.6462 73.8752H0.781281Z" fill="white" />
+						  </svg>
+
+						  <h3 class="service__block__center__title">Find A Doctor</h3>
+						  <p class="service__block__center__desc">Velit faucibus sed adipiscing commodo. 
+							Mattis in at amet, facilisis eu dolor.
+							 Quam sit risus egestas morbi.</p>
+
+							 <div class="service__block__link__group"><a href="#doctors" class="service__block__center__link"><span>Learn More </span></a><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 16L6.575 14.6L12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16Z" fill="white" />
+							  </svg></div>
+					</div>
+
+
+
+					<div class="service__block">
+						<svg width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M22.573 72.1877H31.5938V63.1668H40.6147V54.146H31.5938V45.1251H22.573V54.146H13.5521V63.1668H22.573V72.1877ZM49.6355 56.4012H76.6981V49.6356H49.6355V56.4012ZM49.6355 69.9325H67.6772V63.1668H49.6355V69.9325ZM9.0417 90.2294C6.56096 90.2294 4.43806 89.3469 2.67297 87.5818C0.904887 85.8137 0.0208435 83.6893 0.0208435 81.2085V31.5939C0.0208435 29.1131 0.904887 26.9887 2.67297 25.2206C4.43806 23.4555 6.56096 22.573 9.0417 22.573H31.5938V9.04173C31.5938 6.56099 32.4779 4.43658 34.246 2.66849C36.011 0.903414 38.1339 0.020874 40.6147 0.020874H49.6355C52.1163 0.020874 54.2407 0.903414 56.0088 2.66849C57.7738 4.43658 58.6564 6.56099 58.6564 9.04173V22.573H81.2085C83.6893 22.573 85.8137 23.4555 87.5818 25.2206C89.3468 26.9887 90.2294 29.1131 90.2294 31.5939V81.2085C90.2294 83.6893 89.3468 85.8137 87.5818 87.5818C85.8137 89.3469 83.6893 90.2294 81.2085 90.2294H9.0417ZM9.0417 81.2085H81.2085V31.5939H58.6564C58.6564 34.0746 57.7738 36.1975 56.0088 37.9626C54.2407 39.7307 52.1163 40.6147 49.6355 40.6147H40.6147C38.1339 40.6147 36.011 39.7307 34.246 37.9626C32.4779 36.1975 31.5938 34.0746 31.5938 31.5939H9.0417V81.2085ZM40.6147 31.5939H49.6355V9.04173H40.6147V31.5939Z" fill="#262626" />
+						  </svg>
+
+						  <h3 class="service__block__title">Our Services</h3>
+						  <p class="service__block__desc">Velit faucibus sed adipiscing commodo. 
+							Mattis in at amet, facilisis eu dolor.
+							 Quam sit risus egestas morbi.</p>
+
+							 <div class="service__block__link__group"><a href="/" class="service__block__link">Learn More </a><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8 16L6.575 14.6L12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16Z" fill="#8842F0" />
+							  </svg></div>
+					</div>
+
+
+
+
+
+				</div>
+
+
+
+
+			</section>
+
+			<section class="doctors" id="doctors">
+
+				<h2 class="title">Choose Your Specialist Doctor</h2>
+				<p class="desc">Magnis facilisis tortor volutpat lobortis ac id. 
+					Libero enim nunc etiam consectetur lacus. 
+					In malesuada dictum turpis amet porttitor viverra laoreet at commodo. 
+					Pellentesque vitae id semper nec sollicitudin. 
+					Quis purus, mus consectetur pharetra ipsum facilisis amet cras purus.</p>
+
+				
+					<div class="doctors__group">
+
+						<div class="doctor">
+
+							<div class="doctor__header">
+
+								<img src="img/specialists/atkinson.png" alt="Kornelia Atkinson, MD">
+
+								<div class="doctor__profile">
+									<h3 class="doctor__name">Kornelia Atkinson, MD</h3>
+									<p class="doctor__speciality">Interventional Cardiologist</p>
+								</div></div>
+
+								<p class="doctor__info">Velit faucibus sed adipiscing commodo. 
+									Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing commodo. 
+									Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing</p>
+
+									<a href="/" class="booking__btn">Book Appointment</a>
+							
+						</div>
+
+
+						<div class="doctor">
+
+							<div class="doctor__header">
+
+								<img src="img/specialists/wood.png" alt="Humera Wood, MD">
+
+								<div class="doctor__profile">
+									<h3 class="doctor__name">Humera Wood, MD</h3>
+									<p class="doctor__speciality">OB-GYN Nurse Practitioner</p>
+								</div></div>
+
+								<p class="doctor__info">Velit faucibus sed adipiscing commodo. 
+									Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing commodo. 
+									Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing</p>
+
+									<a href="/" class="booking__btn">Book Appointment</a>
+							
+						</div>
+
+
+
+						<div class="doctor">
+
+							<div class="doctor__header">
+
+								<img src="img/specialists/barrow.png" alt="Athena Barrow, MD">
+
+								<div class="doctor__profile">
+									<h3 class="doctor__name">Athena Barrow, MD</h3>
+									<p class="doctor__speciality">Critical Care Specialist</p>
+								</div></div>
+
+								<p class="doctor__info">Velit faucibus sed adipiscing commodo. 
+									Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing commodo. 
+									Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing</p>
+
+									<a href="/" class="booking__btn">Book Appointment</a>
+							
+						</div>
+
+
+
+						<div class="doctor">
+
+							<div class="doctor__header">
+
+								<img src="img/specialists/jennings.png" alt="Sion Jennings, MD">
+
+								<div class="doctor__profile">
+									<h3 class="doctor__name">Sion Jennings, MD</h3>
+									<p class="doctor__speciality">Nurse Practitioner</p>
+								</div></div>
+
+								<p class="doctor__info">Velit faucibus sed adipiscing commodo. 
+									Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing commodo. 
+									Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing</p>
+
+									<a href="/" class="booking__btn">Book Appointment</a>
+							
+						</div>
+
+
+
+						<div class="doctor">
+
+							<div class="doctor__header">
+
+								<img src="img/specialists/grant.png" alt="Natasha Grant, MD">
+
+								<div class="doctor__profile">
+									<h3 class="doctor__name">Natasha Grant, MD</h3>
+									<p class="doctor__speciality">Immunologist</p>
+								</div></div>
+
+								<p class="doctor__info">Velit faucibus sed adipiscing commodo. 
+									Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing commodo. 
+									Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing</p>
+
+									<a href="/" class="booking__btn">Book Appointment</a>
+							
+						</div>
+
+
+						<div class="doctor">
+
+							<div class="doctor__header">
+
+								<img src="img/specialists/mac.png" alt="Zubair Mac, MD">
+
+								<div class="doctor__profile">
+									<h3 class="doctor__name">Zubair Mac, MD</h3>
+									<p class="doctor__speciality">Nurse Practitioner</p>
+								</div></div>
+
+								<p class="doctor__info">Velit faucibus sed adipiscing commodo. 
+									Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing commodo. 
+									Mattis in at amet, facilisis eu dolor. Quam sit risus egestas morbi.Velit faucibus sed adipiscing</p>
+
+									<a href="/" class="booking__btn">Book Appointment</a>
+							
+						</div>
+
+
+
+
+					</div>
+
+
+
+			</section>
+
+
+
+			<section class="join">
+				<div class="join__title">Join Our Newsletter</div>
+				<form class="join-form">
+					<input class="join-form__input" type="email" placeholder="Enter your email" />
+					<button type="submit" class="btn join-form__btn">
+						<span class="join-form__btn-text">Subscribe</span>
+						<span class="material-icons">email</span>
+					</button>
+				</form>
+			</section>
+
+
+		</div>
+			<footer id="contact" class="footer">
+
+				<div class="footer__clinic">
+		
+					<a href="/" class="logo"><h1>Quiro Diagnostic Center</h1></a>
+					<p class="footer__clinic_desc">Magnis facilisis tortor volutpat lobortis ac id. 
+						Libero enim nunc etiam consectetur lacus. 
+						In malesuada dictum turpis amet porttitor viverra laoreet at commodo.
+						 Pellentesque vitae id semper nec sollicitudin. 
+						 Quis purus, mus consectetur pharetra ipsum facilisis amet cras purus.</p>
+				</div>
+
+				<div class="footer__contact">
+					<div>
+					<h4 class="footer__title">Address</h4>
+					<a class="footer__desc" href="https://www.google.com/maps/place/5+Koh+Sek+Lim+Rd,+%D0%A1%D1%96%D0%BD%D2%91%D0%B0%D0%BF%D1%83%D1%80+486050/@1.3301878,103.9538967,17z/data=!3m1!4b1!4m6!3m5!1s0x31da3d2bde2ab775:0x72b90b595af1922f!8m2!3d1.3301878!4d103.956477!16s%2Fg%2F11c1fvj4m2?entry=ttu">5 Koh Sek Lim Rd Singapore 486050</a>
+				</div>
+
+				<div>
+					<h4 class="footer__title">Telephone</h4>
+					<div class="footer__contact__group">
+						<a class="footer__desc" href="callto:(07)40127246">(07)40127246 </a>
+						<a class="footer__desc" href="callto:(02)67566577">(02)67566577 </a>
+					</div></div>
+					
+
+					<div><h4 class="footer__title">Email</h4>
+					<a class="footer__desc" href="mailto:name@email.com">name@email.com </a>
+				</div>
+				</div>
+
+
+				<div class="footer__info">
+					<h4 class="footer__info__title">Opening Hour</h4>
+					<p class="footer__info__desc">Thursday: 9am - 6pm</p>
+					<p class="footer__info__desc">Wednesday: 9am - 6pm</p>
+					<p class="footer__info__desc">Saturday: 9am - 6pm</p>
+					<p class="footer__info__desc">Friday: 9am - 6pm</p>
+					<p class="footer__info__desc">Saturday: 9am - 6pm</p>
+					<p class="footer__info__desc">Tuesday: 9am - 6pm</p>
+				</div>
+
+
+		
+			</footer>
+
+
+		
+	</main>
+
+	
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="owl/owl.carousel.min.js"></script>
+	<script src="script.js"></script>
+	
+
+
+	
+</body>
+
+</html>

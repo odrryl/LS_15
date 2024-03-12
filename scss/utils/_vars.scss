@@ -1,0 +1,29 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+
+:root {
+	//fonts: 
+	--ff: "Work Sans", sans-serif;
+
+	//colors:
+
+	--primary-color: #8842f0;
+	--secondary-color: #f9f1fe;
+	--text-color-primary:  #262626;
+	--text-color-secondary:  #575757;
+	--dark-bg: #1c1b1f;
+	--white: #fff;
+	--black: #000;
+
+
+
+
+	//else:
+
+	--transition: .2s all ease-in-out;
+	--border-radius-primary: 50rem;
+}

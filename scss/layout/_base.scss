@@ -1,0 +1,53 @@
+html {
+	font-size: 1px;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--ff);
+	font-size: 16rem;
+}
+
+.container {
+	max-width: calc(1170rem - 40rem);
+	padding: 0 20rem;
+	margin-inline: auto;
+}
+
+.btn {
+	display: inline-block;
+	cursor: pointer;
+	border: 0;
+	font-family: var(--ff);
+	border-radius: 50rem;
+}
+
+h1{
+
+	font-weight: 600;
+		font-size: 24rem;
+		color: var(--text-color-primary);
+		line-height: 28rem;
+}
+
+
+.title {
+
+	
+font-weight: 700;
+font-size: 48rem;
+color: var(--text-color-primary);
+margin-bottom: 56rem;
+
+}
+
+.desc {
+
+font-weight: 400;
+font-size: 16rem;
+text-align: center;
+color: var(--text-color-primary);
+max-width: 837px;
+margin-bottom: 111rem;
+
+}

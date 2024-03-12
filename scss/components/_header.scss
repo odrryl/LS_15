@@ -1,0 +1,177 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 47rem;
+	
+
+	&__ul {
+		display: flex;
+		align-items: center;
+		gap: 24px;
+		transition: var(--transition);
+
+		@include tablet {
+			position: fixed;
+			width: 70%;
+			height: 100%;
+			flex-direction: column;
+			left: 0;
+			top: 0;
+			background: var(--black);
+			opacity: 90%;
+			align-items: center;
+			justify-content: center;
+			transform: translateX(-120%);
+			transition: var(--transition);
+		}
+
+		&._active {
+			transform: translateX(0);
+		}
+
+
+
+		.icon-close {
+			position: absolute;
+			top: 40px;
+			right: 40px;
+			color: var(--white);
+		}
+	}
+
+	&__a {
+
+	
+		font-weight: 400;
+		font-size: 16rem;
+		color: var(--black);
+		position: relative;
+		transition: var(--transition);
+		line-height: 19rem;
+
+
+		span{
+
+			color: var(--primary-color);
+			font-weight: 600;
+
+
+		}
+
+
+
+
+		@include tablet {
+			color: var(--white);
+		}
+	}
+
+
+
+	&__a:hover{
+		color: var(--primary-color);
+		font-weight: 600;
+
+	}
+	
+	  &__a:hover::before,
+	  &__a.is-active::before {
+		transform: scale(1);
+	  }
+	
+	  &__a::before {
+		content: "";
+		display: block;
+		width: calc(100% - 10rem);
+		height: 1px;
+		position: absolute;
+		left: 0;
+		bottom: -5rem;
+		left: 5rem; 
+		transform: scale(0);
+		transition: var(--transition);
+		background: var(--primary-color);
+	  }
+
+	
+
+
+	&__search {
+
+		
+
+
+	}
+
+	&__search__form{
+		border-radius: var(--border-radius-primary);
+		background: var(--black);
+		padding: 10rem 18rem;
+		
+		
+		display: flex;
+	
+		justify-content: flex-start ;
+		max-width: 278rem;
+
+		gap: 15rem;
+		
+		
+	
+		margin-inline: auto;
+
+	}
+
+	&_search_input{
+
+	
+		border: none;
+		font-family: var(--ff);
+		font-weight: 400;
+		font-size: 14rem;
+		color: var(--white);
+		background: none;
+		line-height: 16rem;
+		padding-bottom: 5rem;
+		
+
+		&::placeholder {
+			color: var(--white);
+			
+		
+			
+
+		}
+
+	}
+
+	&_search_btn {
+
+
+
+  background: none;
+  border: none;
+  display: inline-flex;
+
+  cursor: pointer;
+
+
+
+
+	}
+
+}
+
+
+
+.icon-menu,
+.icon-close {
+	cursor: pointer;
+	display: none;
+
+	@include tablet {
+		display: inline-block;
+	}
+}
+

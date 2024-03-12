@@ -1,0 +1,109 @@
+.doctors {
+
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 130rem;
+
+    
+&__group {
+
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 27rem;
+grid-row-gap: 28rem;
+}
+
+
+}
+
+.doctor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 20rem;
+    padding: 33rem 29rem;
+    background: var(--secondary-color);
+    
+
+
+    &__header {
+
+        display: flex;
+        gap: 13rem;
+        align-items: center;
+        margin-top: 11rem;
+   
+       
+      
+    }
+    &__profile {
+
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+
+
+    }
+    &__name {
+
+     
+font-weight: 600;
+font-size: 20rem;
+color: var(--text-color-primary);
+line-height: 23rem;
+    }
+    &__speciality {
+
+font-weight: 400;
+font-size: 16rem;
+color: var(--text-color-secondary);
+line-height: 19rem;
+
+
+    }
+    &__info {
+
+        margin-top: 25rem;
+        max-width: 293rem;
+        line-height: 19rem;
+font-weight: 400;
+font-size: 16rem;
+color: var(--text-color-secondary);
+margin-bottom: 28rem;
+    }
+    
+
+
+}
+
+
+.booking__btn {
+
+display: inline-block;
+cursor: pointer;
+font-weight: 600;
+font-size: 20rem;
+color: var(--secondary-color);
+line-height: 23rem;
+transition: var(--transition);
+
+
+border-radius: var(--border-radius-primary);
+
+background: var(--primary-color);
+padding: 10rem 49rem;
+
+
+
+
+}
+
+.booking__btn:hover{
+
+    transform: scale(1.1);
+
+}
