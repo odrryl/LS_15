@@ -179,12 +179,18 @@ h1 {
   color: var(--text-color-primary);
   line-height: 28rem;
 }
+@media (max-width: 992px) {
+  h1 {
+    text-align: center;
+  }
+}
 
 .title {
   font-weight: 700;
   font-size: 48rem;
   color: var(--text-color-primary);
   margin-bottom: 56rem;
+  text-align: center;
 }
 
 .desc {
@@ -299,6 +305,15 @@ h1 {
           justify-content: space-between;
   margin-top: 47rem;
 }
+@media (max-width: 576px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20rem;
+  }
+}
 .header__ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -333,6 +348,7 @@ h1 {
             transform: translateX(-120%);
     -webkit-transition: var(--transition);
     transition: var(--transition);
+    z-index: 2;
   }
 }
 .header__ul._active {
@@ -400,6 +416,12 @@ h1 {
   gap: 15rem;
   margin-inline: auto;
 }
+@media (max-width: 992px) {
+  .header__search__form {
+    padding: 10rem;
+    gap: 0;
+  }
+}
 .header_search_input {
   border: none;
   font-family: var(--ff);
@@ -409,6 +431,11 @@ h1 {
   background: none;
   line-height: 16rem;
   padding-bottom: 5rem;
+}
+@media (max-width: 992px) {
+  .header_search_input {
+    display: none;
+  }
 }
 .header_search_input::-webkit-input-placeholder {
   color: var(--white);
@@ -439,7 +466,9 @@ h1 {
 @media (max-width: 992px) {
   .icon-menu,
   .icon-close {
-    display: inline-block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -542,22 +571,29 @@ h1 {
   margin-bottom: 111rem;
 }
 .service__group {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 30rem;
-  grid-row-gap: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center;
-  max-width: 1170px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 1200px) {
+  .service__group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .service__block, .service__block__center {
   border-radius: 15rem;
-  max-width: 370rem;
   background: var(--secondary-color);
-  padding: 47rem 26rem;
+  padding: 46rem 26rem 47rem 26rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -569,6 +605,11 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 576px) {
+  .service__block, .service__block__center {
+    padding: 26rem 6rem 27rem 6rem;
+  }
+}
 .service__block__title, .service__block__center__title {
   font-weight: 600;
   font-size: 24rem;
@@ -579,6 +620,7 @@ h1 {
   font-weight: 400;
   font-size: 16rem;
   text-align: center;
+  width: 318rem;
   color: var(--text-color-secondary);
   margin-top: 17rem;
   margin-bottom: 18rem;
@@ -631,7 +673,19 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 27rem;
-  grid-row-gap: 28rem;
+  grid-row-gap: 27rem;
+}
+@media (max-width: 1200px) {
+  .doctors__group {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .doctors__group {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
 }
 
 .doctor {
@@ -642,12 +696,24 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   border-radius: 20rem;
-  padding: 33rem 29rem;
+  padding: 44rem 38rem 33rem 39rem;
   background: var(--secondary-color);
+  width: 370rem;
+}
+@media (max-width: 576px) {
+  .doctor {
+    padding: 22rem 18rem 11rem 19rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .doctor__header {
   display: -webkit-box;
@@ -690,22 +756,29 @@ h1 {
   color: var(--text-color-secondary);
   margin-bottom: 28rem;
 }
-
-.booking__btn {
+@media (max-width: 576px) {
+  .doctor__info {
+    max-width: 200rem;
+  }
+}
+.doctor__booking__btn {
   display: inline-block;
   cursor: pointer;
   font-weight: 600;
   font-size: 20rem;
   color: var(--secondary-color);
-  line-height: 23rem;
   -webkit-transition: var(--transition);
   transition: var(--transition);
   border-radius: var(--border-radius-primary);
   background: var(--primary-color);
   padding: 10rem 49rem;
 }
-
-.booking__btn:hover {
+@media (max-width: 576px) {
+  .doctor {
+    padding: 10rem 29rem;
+  }
+}
+.doctor__booking__btn:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -723,6 +796,19 @@ h1 {
   padding: 106rem 12rem;
   gap: 108rem;
 }
+@media (max-width: 992px) {
+  .footer {
+    gap: 50rem;
+    padding: 56rem 12rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .footer__clinic_desc {
   margin-top: 26rem;
   font-weight: 400;
@@ -730,6 +816,11 @@ h1 {
   color: var(--text-color-primary);
   line-height: 19rem;
   max-width: 431rem;
+}
+@media (max-width: 992px) {
+  .footer__clinic_desc {
+    text-align: center;
+  }
 }
 .footer__contact {
   display: -webkit-box;
@@ -748,10 +839,20 @@ h1 {
   line-height: 23rem;
   margin-bottom: 9rem;
 }
+@media (max-width: 992px) {
+  .footer__title, .footer__info__title {
+    text-align: center;
+  }
+}
 .footer__desc, .footer__info__desc {
   font-weight: 400;
   font-size: 16rem;
   color: var(--text-color-primary);
+}
+@media (max-width: 992px) {
+  .footer__desc, .footer__info__desc {
+    text-align: center;
+  }
 }
 .footer__contact__group {
   display: -webkit-box;
@@ -759,11 +860,23 @@ h1 {
   display: flex;
   gap: 16rem;
 }
+@media (max-width: 992px) {
+  .footer__contact__group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .footer__info__title {
   margin-bottom: 17rem;
 }
 .footer__info__desc {
   padding-bottom: 15rem;
+}
+@media (max-width: 992px) {
+  .footer__email__group {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,70 +1,82 @@
 .footer {
-    
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 130rem;
 
-	margin-inline: auto;
+  background: var(--secondary-color);
+  padding: 106rem 12rem;
+  gap: 108rem;
+
+  @include tablet {
+    gap: 50rem;
+    padding: 56rem 12rem;
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__clinic {
+  }
+
+  &__clinic_desc {
+    margin-top: 26rem;
+    font-weight: 400;
+    font-size: 16rem;
+    color: var(--text-color-primary);
+    line-height: 19rem;
+    max-width: 431rem;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+  &__contact {
     display: flex;
-    justify-content: center;
-   margin-top: 130rem;
-  
-   background: var(--secondary-color);
-   padding: 106rem 12rem;
-   gap: 108rem;
+    flex-direction: column;
+    gap: 37rem;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 20rem;
+    color: var(--text-color-primary);
+    line-height: 23rem;
+    margin-bottom: 9rem;
 
-    &__clinic{
-
-
-
-
+    @include tablet {
+      text-align: center;
     }
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 16rem;
+    color: var(--text-color-primary);
 
-
-    &__clinic_desc {
-
-      margin-top: 26rem;  
-font-weight: 400;
-font-size: 16rem;
-color: var(--text-color-primary);
-line-height: 19rem;
-max-width: 431rem;
+    @include tablet {
+      text-align: center;
     }
-    &__contact {
-       display: flex;
-       flex-direction: column;
-       gap: 37rem;
-       
+  }
+  &__contact__group {
+    display: flex;
+    gap: 16rem;
+
+    @include tablet {
+      justify-content: center;
     }
-    &__title {
+  }
 
-font-weight: 600;
-font-size: 20rem;
-color: var(--text-color-primary);
-line-height: 23rem;
-margin-bottom: 9rem;
+  &__info__title {
+    @extend .footer__title;
+    margin-bottom: 17rem;
+  }
+  &__info__desc {
+    @extend .footer__desc;
+    padding-bottom: 15rem;
+  }
+
+  &__email__group {
+    @include tablet {
+      text-align: center;
     }
-    &__desc {
-       
-font-weight: 400;
-font-size: 16rem;
-color: var(--text-color-primary);
-
-
-    }
-    &__contact__group {
-        display: flex;
-        gap: 16rem;
-    }
-
-    &__info__title {
-
-        @extend .footer__title;
-        margin-bottom: 17rem;
-
-    }
-    &__info__desc {
-
-        @extend .footer__desc;
-        padding-bottom: 15rem;
-    }
-   
+  }
 }
-
